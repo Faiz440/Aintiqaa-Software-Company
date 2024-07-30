@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import '@fortawesome/fontawesome-free/css/all.min.css';
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
+
+
+.tooltip {
+    @apply invisible absolute;
+  }
+  
+  .has-tooltip:hover .tooltip {
+    @apply visible z-50;
+  }
+
+  .custom-dots .slick-dots li button:before {
+    font-size: 4rem; 
+    color: gray;  
+  }
+  
+  .custom-dots .slick-dots li.slick-active button:before {
+    color: blue;    
+  }
