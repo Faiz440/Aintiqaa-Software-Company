@@ -28,10 +28,10 @@ import {
 
 const products = [
   {
-    name: "Integrations",
+    name: "Subscribe",
     description: "Connect with third-party tools",
     href: "automations",
-    icon: ChartPieIcon, 
+    icon: ChartPieIcon,
   },
   {
     name: "Security",
@@ -40,9 +40,9 @@ const products = [
     icon: FingerPrintIcon,
   },
   {
-    name: "Subscribe",
+    name: "Integrations",
     description: "Get a better understanding of your traffic",
-    href: "404",
+    href: "403",
     icon: SquaresPlusIcon,
   },
 ];
@@ -86,7 +86,7 @@ export default function Example() {
         </div>
         <PopoverGroup className="hidden lg:flex lg:gap-x-8">
           <Popover className="relative">
-            <PopoverButton className="flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900 hover:text-blue-700">
+            <PopoverButton className="flex items-center gap-x-1 text-md font-semibold leading-6 text-gray-900 hover:text-blue-700">
               Resources
               <ChevronDownIcon
                 className="h-5 w-5 flex-none text-gray-400"
@@ -149,25 +149,25 @@ export default function Example() {
 
           <a
             href="about"
-            className="text-sm font-semibold leading-6 text-gray-900 hover:text-blue-700"
+            className="text-md font-semibold leading-6 text-gray-900 hover:text-blue-700"
           >
             About Us
           </a>
           <a
             href="ourproduct"
-            className="text-sm font-semibold leading-6 text-gray-900 hover:text-blue-700"
+            className="text-md font-semibold leading-6 text-gray-900 hover:text-blue-700"
           >
             Our Product
           </a>
           <a
             href="services"
-            className="text-sm font-semibold leading-6 text-gray-900 hover:text-blue-700"
+            className="text-md font-semibold leading-6 text-gray-900 hover:text-blue-700"
           >
             Services
           </a>
           <a
             href="ourwork"
-            className="text-sm font-semibold leading-6 text-gray-900 hover:text-blue-700"
+            className="text-md font-semibold leading-6 text-gray-900 hover:text-blue-700"
           >
             Our Work
           </a>
@@ -267,7 +267,6 @@ export default function Example() {
                 <a
                   href="inquirenow"
                   className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 hover:text-blue-700"
-                  
                 >
                   Inquire Now
                 </a>

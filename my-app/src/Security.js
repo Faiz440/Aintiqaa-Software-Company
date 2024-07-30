@@ -1,8 +1,8 @@
+import { ServerIcon } from "@heroicons/react/20/solid";
 import {
-  CloudArrowUpIcon,
-  LockClosedIcon,
-  ServerIcon,
-} from "@heroicons/react/20/solid";
+  MdSystemSecurityUpdateWarning,
+  MdOutlineSecurity,
+} from "react-icons/md";
 import { Helmet } from "react-helmet-async";
 import auto from "./images/close-up-finger-typing-keyboard.jpg";
 export default function Example() {
@@ -58,16 +58,16 @@ export default function Example() {
           <div className="lg:col-span-2 lg:col-start-1 lg:row-start-1 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
             <div className="lg:pr-4">
               <div className="lg:max-w-lg">
-                <p className="text-base font-semibold leading-7 text-indigo-600">
-                  Deploy faster
-                </p>
-                <h1 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+                <h1 className="mt-2 text-3xl font-bold tracking-tight text-indigo-600 sm:text-4xl">
                   A better security
                 </h1>
                 <p className="mt-6 text-xl leading-8 text-gray-700">
-                  Aliquet nec orci mattis amet quisque ullamcorper neque, nibh
-                  sem. At arcu, sit dui mi, nibh dui, diam eget aliquam. Quisque
-                  id at vitae feugiat egestas.
+                  Web security is critical for protecting web applications and
+                  data from malicious attacks and unauthorized access. It is
+                  critical to implement precautions such as updated software,
+                  understanding of SQL injection and cross-site scripting,
+                  proper error handling, extensive data validation, and strong
+                  password restrictions.
                 </p>
               </div>
             </div>
@@ -83,40 +83,46 @@ export default function Example() {
           <div className="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
             <div className="lg:pr-4">
               <div className="max-w-xl text-base leading-7 text-gray-700 lg:max-w-lg">
-                <p>
-                  Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget
-                  risus enim. Mattis mauris semper sed amet vitae sed turpis id.
-                  Id dolor praesent donec est. Odio penatibus risus viverra
-                  tellus varius sit neque erat velit. Faucibus commodo massa
-                  rhoncus, volutpat. Dignissim sed eget risus enim. Mattis
-                  mauris semper sed amet vitae sed turpis id.
-                </p>
                 <ul className="mt-8 space-y-8 text-gray-600">
                   <li className="flex gap-x-3">
-                    <CloudArrowUpIcon
+                    <MdSystemSecurityUpdateWarning
                       className="mt-1 h-5 w-5 flex-none text-indigo-600"
                       aria-hidden="true"
                     />
                     <span>
                       <strong className="font-semibold text-gray-900">
-                        Push to deploy.
+                        What is Mobile Security?
                       </strong>{" "}
-                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                      Maiores impedit perferendis suscipit eaque, iste dolor
-                      cupiditate blanditiis ratione.
+                      Mobile device security states that the protection set
+                      together to prevent hackers and other unauthorized users
+                      from accessing smartphones, tablets, and other portable
+                      electronic devices. It means implementing plans and
+                      employing instruments to protect private, sensitive, and
+                      personal data on these devices. To ensure that users may
+                      use their mobile devices safely and securely, mobile
+                      device security simply attempts to prevent unauthorized
+                      access, data breaches, and virus attacks on mobile
+                      devices. Mobile device cybersecurity covers protecting
+                      data on the device itself as well as on endpoints and
+                      networking hardware that are connected to the device.
                     </span>
                   </li>
                   <li className="flex gap-x-3">
-                    <LockClosedIcon
+                    <MdOutlineSecurity
                       className="mt-1 h-5 w-5 flex-none text-indigo-600"
                       aria-hidden="true"
                     />
                     <span>
                       <strong className="font-semibold text-gray-900">
-                        SSL certificates.
+                        What is Web Security?
                       </strong>{" "}
-                      Anim aute id magna aliqua ad ad non deserunt sunt. Qui
-                      irure qui lorem cupidatat commodo.
+                      Web Security is an online security solution that will
+                      restrict access to harmful websites, stop web-based risks,
+                      and manage staff internet usage. Web Security is very
+                      important nowadays. Websites are always prone to security
+                      threats/risks. For example- when you are transferring data
+                      between client and server and you have to protect that
+                      data that security of data is your web security.
                     </span>
                   </li>
                   <li className="flex gap-x-3">
@@ -126,30 +132,25 @@ export default function Example() {
                     />
                     <span>
                       <strong className="font-semibold text-gray-900">
-                        Database backups.
+                        What is cloud web security?
                       </strong>{" "}
-                      Ac tincidunt sapien vehicula erat auctor pellentesque
-                      rhoncus. Et magna sit morbi lobortis.
+                      Cloud web security plays a pivotal role in the management
+                      of online-based resources by filtering and governing
+                      internet traffic in real-time, all accomplished from a
+                      cloud-based platform.
                     </span>
                   </li>
                 </ul>
-                <p className="mt-8">
-                  Et vitae blandit facilisi magna lacus commodo. Vitae sapien
-                  duis odio id et. Id blandit molestie auctor fermentum
-                  dignissim. Lacus diam tincidunt ac cursus in vel. Mauris
-                  varius vulputate et ultrices hac adipiscing egestas. Iaculis
-                  convallis ac tempor et ut. Ac lorem vel integer orci.
-                </p>
-                <h2 className="mt-16 text-2xl font-bold tracking-tight text-gray-900">
-                  No server? No problem.
+                <h2 className="mt-16 text-3xl font-bold tracking-tight text-indigo-600">
+                  Web application firewall (WAF)
                 </h2>
                 <p className="mt-6">
-                  Id orci tellus laoreet id ac. Dolor, aenean leo, ac etiam
-                  consequat in. Convallis arcu ipsum urna nibh. Pharetra,
-                  euismod vitae interdum mauris enim, consequat vulputate nibh.
-                  Maecenas pellentesque id sed tellus mauris, ultrices mauris.
-                  Tincidunt enim cursus ridiculus mi. Pellentesque nam sed
-                  nullam sed diam turpis ipsum eu a sed convallis diam.
+                  A WAF prevents hackers from installing malicious code onto a
+                  site and stops automated attacks that commonly target small or
+                  lesser-known brands. These attacks are carried out by
+                  malicious bots that automatically look for vulnerabilities
+                  they can exploit or cause DDoS attacks that slow or crash your
+                  website.
                 </p>
               </div>
             </div>

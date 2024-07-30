@@ -245,7 +245,10 @@ export default function Example() {
                   />
                   <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-700">
                     <button className="text-lg font-medium text-black bg-white bg-opacity-75 px-4 py-2 rounded-lg cursor-pointer hover:bg-blue-700 hover:text-white transition duration-700">
-                      View Detail
+                      <a href={product.href} className="relative">
+                        View Detail
+                        <span aria-hidden="true" className="absolute inset-0" />
+                      </a>
                     </button>
                   </div>
                 </div>

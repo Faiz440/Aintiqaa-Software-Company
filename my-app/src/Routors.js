@@ -11,6 +11,7 @@ import Automations from "./Automations";
 import Inquirenow from "./Inquirenow";
 import Example from "./Request";
 import Sitemap from "./Sitemap";
+import Per from "./403";
 export default function AppRouter() {
   return (
     <Router>
@@ -25,6 +26,7 @@ export default function AppRouter() {
         <Route path="/automations" element={<Automations />} />
         <Route path="/request" element={<Example />} />
         <Route path="/sitemap" element={<Sitemap />} />
+        <Route path="403" element={<Per />} />
         <Route path="*" element={<Error />} />
       </Routes>
     </Router>

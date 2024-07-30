@@ -45,11 +45,11 @@ export default function HomePage() {
       </Helmet>
 
       <div
-        className="bg-white bg-cover  max-h-screen"
+        className="bg-white bg-cover lg:relative bg-no-repeat relative bg-image bg-center"
         style={{ backgroundImage: `url(${banner})` }}
       >
-        {/* <div className="absolute inset-0 bg-black opacity-70"></div> */}
-        <div className="flex flex-col items-center justify-center min-h-screen text-center container  px-12 py-18 mx-auto ">
+        <div className="absolute inset-0 bg-black opacity-50"></div>
+        <div className="flex flex-col items-center justify-center text-center container px-12 py-18 mx-auto pt-24 relative">
           <h1 className="text-7xl font-bold mb-4 text-white">
             Idea! That you can arise with
           </h1>
@@ -59,13 +59,12 @@ export default function HomePage() {
             The Great Ideas To The Global Startup To The Enterprise Companies
           </p>
           <div className="lg:py-12 py-5">
-            <button className=" mt-3 px-3.5 py-3.5 text-me  text-white shadow-sm hover:bg-yellow-500 focus-visible:outline focus-visible:outline-3 focus-visible:outline-offset-2 focus-visible:outline-yellow-600  border border-white  font-semibold rounded hover:text-white transition duration-700">
+            <button className="mt-3 px-3.5 py-3.5 text-me text-white shadow-sm hover:bg-yellow-500 focus-visible:outline focus-visible:outline-3 focus-visible:outline-offset-2 focus-visible:outline-yellow-600 border border-white font-semibold rounded hover:text-white transition duration-700">
               <a href="ourwork">Explore Work</a>
             </button>
           </div>
         </div>
       </div>
-
       {showScrollButton && (
         <button
           onClick={scrollToTop}

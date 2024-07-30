@@ -1,12 +1,12 @@
 import { Helmet } from "react-helmet-async";
-import error from "./images/404.png";
+import error1 from "./images/403.png";
 
-export default function Example() {
+export default function Per() {
   return (
     <>
       <Helmet>
         <title>
-          404 Page Not Found | Aintiqaa Technologies | Mobile, Cloud and Web
+          403 No permission | Aintiqaa Technologies | Mobile, Cloud and Web
           Solutions Provider
         </title>
         <meta
@@ -22,20 +22,18 @@ export default function Example() {
         <div className="text-center">
           <div className="relative mx-auto w-52 h-44 sm:w-64 sm:h-56 lg:w-72 lg:h-64">
             <img
-              src={error}
+              src={error1}
               alt="404 Error"
               className="w-full h-full object-contain"
             />
           </div>
           <h1 className="mt-4 text-3xl font-bold tracking-tight text-gray-900 sm:text-5xl">
-            Page Not Found
+            No permission
           </h1>
           <p className="mt-6 text-base leading-7 text-gray-600">
-            An error message that is designed to appear when a website won't
-            load
+            The page you&apos;re trying to access is restricted access.
             <br />
-            Then the 404 error page is supposed to load instead and explain the
-            problem.
+            If you feel this is a mistake, Contact your admin.
           </p>
           <div className="mt-10 flex items-center justify-center gap-x-6">
             <a

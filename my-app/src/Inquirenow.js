@@ -356,7 +356,7 @@ export default function Example() {
                           <option value="" disabled>
                             Select a topic
                           </option>
-                          <option value="Mobile Application">
+                          <option value="Software Development">
                             Software Development
                           </option>
                           <option value="Mobile Application">
@@ -545,7 +545,7 @@ export default function Example() {
                   <div className="mt-10">
                     <button
                       type="submit"
-                      className="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-700 block w-full rounded-md bg-black px-1 py-2.5 text-center text-lg font-semibold text-white shadow-sm hover:bg-green-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                      className=" block w-full rounded-md bg-black px-1 py-2.5 text-center text-lg font-semibold text-white shadow-sm hover:bg-green-700 "
                     >
                       Submit Now
                     </button>
