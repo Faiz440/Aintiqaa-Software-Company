@@ -110,7 +110,11 @@ const Products = () => {
               </button>
 
               <button className="w-8 h-8 bg-gray-200 rounded-full flex items-center justify-center border border-gray-400 transition duration-700 ease-in-out transform hover:border-blue-600 hover:bg-gray-300 hover:scale-150">
-                <a href="https://play.google.com/store/apps/details?id=com.sayaaraa&hl=en">
+                <a
+                  href="https://play.google.com/store/apps/details?id=com.sayaaraa&hl=en"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <FontAwesomeIcon
                     icon={faGooglePlay}
                     className="text-gray-700 h-6 w-6"
@@ -119,7 +123,11 @@ const Products = () => {
                 </a>
               </button>
               <button className="w-8 h-8 bg-gray-200 rounded-full flex items-center justify-center border border-gray-400 transition duration-700 ease-in-out transform hover:border-blue-600 hover:bg-gray-300 hover:scale-150">
-                <a href="https://sayaaraa.com/sayaaraa_qa/u">
+                <a
+                  href="https://sayaaraa.com/sayaaraa_qa/u"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <FontAwesomeIcon
                     icon={faGlobe}
                     className="text-gray-700 h-6 w-6"

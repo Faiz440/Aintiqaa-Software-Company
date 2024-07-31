@@ -237,7 +237,7 @@ export default function Example() {
           <div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:gap-x-8">
             {products.map((product) => (
               <div key={product.id} className="group relative cursor-pointer">
-                <div className="aspect-h-1 aspect-w-1 w-full border-y-4 border-x-4	border-gray-100	 overflow-hidden border rounded-t-3xl bg-gray-500 lg:aspect-none lg:h-80 group-hover:bg-blue-600 transition-colors duration-700">
+                <div className="aspect-h-1 aspect-w-1 w-full border-y-4 border-x-4	border-gray-100	 overflow-hidden border rounded-t-3xl bg-gray-500 lg:aspect-none lg:h-80 group-hover:bg-blue-700 transition-colors duration-700">
                   <img
                     src={product.imageSrc}
                     alt={product.imageAlt}
@@ -245,8 +245,13 @@ export default function Example() {
                   />
                   <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-700">
                     <button className="text-lg font-medium text-black bg-white bg-opacity-75 px-4 py-2 rounded-lg cursor-pointer hover:bg-blue-700 hover:text-white transition duration-700">
-                      <a href={product.href} className="relative">
-                        View Detail
+                      <a
+                        href={product.href}
+                        className="relative"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        View Details
                         <span aria-hidden="true" className="absolute inset-0" />
                       </a>
                     </button>
@@ -255,7 +260,12 @@ export default function Example() {
                 <div className="mt-4 flex justify-between">
                   <div>
                     <h3 className="text-2xl font-bold">
-                      <a href={product.href} className="relative text-blue-600">
+                      <a
+                        href={product.href}
+                        className="relative text-blue-600"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
                         <span aria-hidden="true" className="absolute inset-0" />
                         {product.name}
                       </a>

@@ -71,7 +71,11 @@ export default function Footer() {
                     </a>
                   </li>
                   <li>
-                    <a href="sitemap" className="hover:underline" title="Sitemap">
+                    <a
+                      href="sitemap"
+                      className="hover:underline"
+                      title="Sitemap"
+                    >
                       Sitemap
                     </a>
                   </li>
@@ -85,6 +89,8 @@ export default function Footer() {
                       href="https://sayaaraa.com/"
                       className="hover:underline"
                       title="Sayaaraa Garage Management System"
+                      target="_blank"
+                      rel="noopener noreferrer"
                     >
                       Garage Management System
                     </a>
@@ -94,6 +100,8 @@ export default function Footer() {
                       href="https://okmechanic.com/"
                       className="hover:underline"
                       title="Okmechanic Services Management System"
+                      target="_blank"
+                      rel="noopener noreferrer"
                     >
                       Services Management System
                     </a>
@@ -130,7 +138,9 @@ export default function Footer() {
               </div>
             </div>
             <div className="mt-10 lg:flex lg:justify-between mx-0 items-center text-md text-gray-600 border-t border-black whitespace-nowrap">
-              <p>© 2024 <b>Faiz Mohammad.</b> All Rights Reserved.</p>
+              <p>
+                © 2024 <b>Faiz Mohammad.</b> All Rights Reserved.
+              </p>
               <div className="flex space-x-5 lg:text-gray-500 text-lg mx-0 mt-2">
                 <a
                   href="https://www.linkedin.com/company/aintiqaa-technologies/"

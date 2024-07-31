@@ -133,18 +133,18 @@ export default function Example() {
 
   const reviews = [
     {
-      text: "Excellent shop management system. it meets all our need.",
-      name: "Roland Crawford",
-      location: "Jamaica",
+      text: "Very good service 👏 thanks autobay team",
+      name: "Shabbirhasan Nandoliya",
+      location: "India",
+    },
+    {
+      text: "Very good app user friendly and customer service is excellent.",
+      name: "Faiz Mohammad Sheru",
+      location: "India",
     },
     {
       text: "Sayaaraa has simplified the way we operate our workshop dramatically. By switching to Sayaaraa our reception staff can now see what the workshop are doing from any device available to them, which has improved our customer relations and leaves us more time to run our business to the full.",
       name: "Hasanali Sunasara",
-      location: "India",
-    },
-    {
-      text: "Sayaaraa is Full Package with simple and smart features designed to make managing my garage and Stock operation easier.",
-      name: "Syed Huzaifah",
       location: "India",
     },
     {
@@ -168,9 +168,9 @@ export default function Example() {
       location: "India",
     },
     {
-      text: "Very good app user friendly and customer service is excellent.",
-      name: "Faiz Mohammad S.",
-      location: "India",
+      text: "Excellent shop management system. it meets all our need.",
+      name: "Roland Crawford",
+      location: "Jamaica",
     },
   ];
   const logos = [go, seva, Nishtha, Amenity, Ayman, Packaging];
@@ -240,7 +240,7 @@ export default function Example() {
         </div>
         <div className="sm:container lg:container lg:mx-auto lg:py-0 lg:px-32">
           <div className="lg:flex">
-            <div className="px-61 lg:py-8">
+            <div className="lg:py-8">
               <div className=" lg:mb-18 mb-12 mx-6 w-96 col-span-1">
                 <Slider {...settings}>
                   {reviews.map((review, index) => (
@@ -302,7 +302,7 @@ export default function Example() {
                           autoComplete="first-name"
                           value={formData.firstName}
                           onChange={handleChange}
-                          className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                          className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 focus:shadow-lg sm:text-sm sm:leading-6"
                         />
                         {errors.firstName && (
                           <p className="text-red-600 text-md">
@@ -429,6 +429,7 @@ export default function Example() {
                         )}
                       </div>
                     </div>
+
                     <div className="sm:col-span-2">
                       <label
                         htmlFor="phone-number"
@@ -454,6 +455,7 @@ export default function Example() {
                         )}
                       </div>
                     </div>
+
                     <div className="sm:col-span-2">
                       <label
                         htmlFor="country"
@@ -463,16 +465,56 @@ export default function Example() {
                         <span className="text-red-600">*</span>
                       </label>
                       <div className="mt-2.5">
-                        <input
-                          type="text"
-                          placeholder="Country"
+                        <select
                           name="country"
                           id="country"
-                          autoComplete="country"
                           value={formData.country}
                           onChange={handleChange}
-                          className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                        />
+                          className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                        >
+                          <option value="" disabled>
+                            Select a Country
+                          </option>
+                          <option value="Afghanistan">Afghanistan</option>
+                          <option value="Armenia">Armenia</option>
+                          <option value="Australia">Australia</option>
+                          <option value="Bahrain">Bahrain</option>
+                          <option value="Bangladesh">Bangladesh</option>
+                          <option value="Brazil">Brazil</option>
+                          <option value="Canada">Canada</option>
+                          <option value="France">France</option>
+                          <option value="Germany">Germany</option>
+                          <option value="India">India</option>
+                          <option value="Indonesia">Indonesia</option>
+                          <option value="Iran">Iran</option>
+                          <option value="Iraq">Iraq</option>
+                          <option value="Ireland">Ireland</option>
+                          <option value="Israel">Israel</option>
+                          <option value="Italy">Italy</option>
+                          <option value="Japan">Japan</option>
+                          <option value="Kuwait">Kuwait</option>
+                          <option value="Malaysia">Malaysia</option>
+                          <option value="Nepal">Nepal</option>
+                          <option value="Netherlands">Netherlands</option>
+                          <option value="New Zealand">New Zealand</option>
+                          <option value="Norway">Norway</option>
+                          <option value="Pakistan">Pakistan</option>
+                          <option value="Panama">Panama</option>
+                          <option value="Peru">Peru</option>
+                          <option value="Qatar">Qatar</option>
+                          <option value="Russia">Russia</option>
+                          <option value="Saudi Arabia">Saudi Arabia</option>
+                          <option value="Singapore">Singapore</option>
+                          <option value="South Africa">South Africa</option>
+                          <option value="Sri Lanka">Sri Lanka</option>
+                          <option value="United Kingdom">United Kingdom</option>
+                          <option value="United States">United States</option>
+                          <option value="Yemen">Yemen</option>
+                          <option value="Qatar">Qatar</option>
+                          <option value="Turkey">Turkey</option>
+
+                          <option value="Other">Other</option>
+                        </select>
                         {errors.country && (
                           <p className="text-red-600 text-md">
                             {errors.country}
@@ -498,11 +540,6 @@ export default function Example() {
                           onChange={handleChange}
                           className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                         />
-                        {errors.message && (
-                          <p className="text-red-600 text-md">
-                            {errors.message}
-                          </p>
-                        )}
                       </div>
                     </div>
                     <div className="flex gap-x-4 sm:col-span-2">

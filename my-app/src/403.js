@@ -18,7 +18,7 @@ export default function Per() {
           content="404 Page Not Found | Aintiqaa Technologies | Mobile, Cloud and Web Solutions Provider"
         ></meta>
       </Helmet>
-      <main className="grid  place-items-center bg-white px-6 py-14 lg:py-14 lg:px-8">
+      <main className="grid  place-items-center bg-white px-6 py-14 lg:py-8 lg:px-8">
         <div className="text-center">
           <div className="relative mx-auto w-52 h-44 sm:w-64 sm:h-56 lg:w-72 lg:h-64">
             <img
