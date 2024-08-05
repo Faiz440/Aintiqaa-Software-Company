@@ -60,7 +60,7 @@ export default function Example({ open, onClose }) {
         ])
       );
 
-      const response = await fetch("http://192.168.0.127:8000/submit", {
+      const response = await fetch("api insert", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
